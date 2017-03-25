@@ -40,6 +40,15 @@ $(function() {
         }
     }
     $("#xml_editor").xmlEditor({
-        schema: '../asset/galler.json'
+        schema: '../asset/galler.json',
+        ajaxOptions : {
+            xmlUploadPath : "//192.168.1.101:8000/galler/xml"
+        },
+        submitResponseHandler : function(data){
+
+        },
+        onSubmit : function(){
+            console.log('submit called');
+        }
     });
 });

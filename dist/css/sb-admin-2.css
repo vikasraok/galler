@@ -646,10 +646,7 @@ header .view a {
   margin: .5em .4em .5em 0;
   cursor: pointer;
 }
-.xml_dialog .ui-icon {
-  display: block;
-  padding: .4em .3em;
-}
+
 .xml_dialog .ui-resizable-se {
   width: 12px;
   height: 12px;
