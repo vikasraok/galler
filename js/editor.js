@@ -16,6 +16,3 @@ $(function () {
         }
     });
 });
-/**
- * Created by vikas on 25-Mar-17.
- */

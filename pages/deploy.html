@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>configurator</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- MetisMenu CSS -->
+    <link href="../vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../dist/css/sb-admin-2.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div id="wrapper">
+    <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">RTU Configurator</a>
+        </div>
+        <!-- /.navbar-header -->
+
+
+        <!-- /.navbar-top-links -->
+
+        <div class="navbar-default sidebar" role="navigation">
+            <div class="sidebar-nav navbar-collapse">
+                <ul class="nav" id="side-menu">
+                    <li>
+                        <a href="index.html"><i class="fa fa-edit fa-fw"></i>Editor</a>
+                    </li>
+                    <li>
+                        <a href="device.html"><i class="fa fa-plus-circle fa-fw"></i>Add Device</a>
+                    </li>
+                    <li>
+                        <a href="deploy.html"><i class="fa fa-check-square-o fa-fw"></i>Deploy</a>
+                    </li>
+                    <!-- <li>
+                         <a href="logs.html"><i class="fa fa-history fa-fw"></i>Logs</a>
+                     </li>
+                     <li>
+                         <a href="users.html"><i class="fa fa-users fa-fw"></i>Accounts</a>
+                     </li>-->
+                </ul>
+            </div>
+            <!-- /.sidebar-collapse -->
+        </div>
+        <!-- /.navbar-static-side -->
+    </nav>
+    <div id="page-wrapper">
+        <div class="row">
+            <form class="container col-sm-12 col-md-6" style="padding-top: 20px" id="searchRtu">
+                <div class="row">
+                    <div class="col-sm-12 col-md-6">
+                        <div class="sidebar-search">
+                            <div class="input-group custom-search-form">
+                                <input type="text" class="form-control" placeholder="Search device"
+                                       data-type="search" id="rtuFilter">
+                                <span class="input-group-btn">
+                                <button class="btn btn-default" type="button">
+                                    <i class="fa fa-search"></i>
+                                </button>
+                            </span>
+                            </div>
+                            <!-- /input-group -->
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                        <table data-role="table" id="rtu-table" data-filter="true" data-input="#rtuFilter"
+                               class="ui-responsive">
+                            <tbody></tbody>
+                        </table>
+                    </div>
+                </div>
+            </form>
+            <form class="container col-sm-12 col-md-6" style="padding-top: 20px" id="searchXml">
+                <div class="row">
+                    <div class="col-sm-12 col-md-6">
+                        <div class="sidebar-search">
+                            <div class="input-group custom-search-form">
+                                <input type="text" class="form-control" placeholder="Search xml" data-type="search"
+                                       id="xmlFilter">
+                                <span class="input-group-btn">
+                                <button class="btn btn-default" type="button">
+                                    <i class="fa fa-search"></i>
+                                </button>
+                            </span>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                        <table data-role="table" id="xml-table" data-filter="true" data-input="#xmlFilter"
+                               class="ui-responsive">
+                            <tbody></tbody>
+                        </table>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<script src="//code.jquery.com/jquery-1.9.1.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js"></script>
+<!-- Metis Menu Plugin JavaScript -->
+<script src="../vendor/metisMenu/metisMenu.min.js"></script>
+<!-- Custom Theme JavaScript -->
+<script src="../js/main.js"></script>
+<script src="../js/deploy.js"></script>
+
+</body>
+</html>

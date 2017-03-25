@@ -924,6 +924,9 @@
                 var self = this;
                 $.ajax({
                     url: config.url,
+                    headers : {
+                        TOKEN : $.cookie('token')
+                    },
                     type: "POST",
                     data: xmlString,
                     success: function (response) {
