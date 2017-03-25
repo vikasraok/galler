@@ -66,58 +66,24 @@
     </nav>
     <div id="page-wrapper">
         <div class="row">
-            <form class="container col-sm-12 col-md-6" style="padding-top: 20px" id="searchRtu">
+            <form class="container col-sm-12 col-md-6" style="padding: 20px" id="searchRtu">
                 <div class="row">
-                    <div class="col-sm-12 col-md-6">
-                        <div class="sidebar-search">
-                            <div class="input-group custom-search-form">
-                                <input type="text" class="form-control" placeholder="Search device"
-                                       data-type="search" id="rtuFilter">
-                                <span class="input-group-btn">
-                                <button class="btn btn-default" type="button">
-                                    <i class="fa fa-search"></i>
-                                </button>
-                            </span>
-                            </div>
-                            <!-- /input-group -->
-                        </div>
-                    </div>
-                    <div class="col-sm-12 col-md-6">
-                        <table data-role="table" id="rtu-table" data-filter="true" data-input="#rtuFilter"
-                               class="ui-responsive">
-                            <tbody></tbody>
-                        </table>
-                    </div>
+                    <select title="rtu" id="rtu-select"></select>
                 </div>
             </form>
-            <form class="container col-sm-12 col-md-6" style="padding-top: 20px" id="searchXml">
+            <form class="container col-sm-12 col-md-6" style="padding: 20px" id="searchXml">
                 <div class="row">
-                    <div class="col-sm-12 col-md-6">
-                        <div class="sidebar-search">
-                            <div class="input-group custom-search-form">
-                                <input type="text" class="form-control" placeholder="Search xml" data-type="search"
-                                       id="xmlFilter">
-                                <span class="input-group-btn">
-                                <button class="btn btn-default" type="button">
-                                    <i class="fa fa-search"></i>
-                                </button>
-                            </span>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="col-sm-12 col-md-6">
-                        <table data-role="table" id="xml-table" data-filter="true" data-input="#xmlFilter"
-                               class="ui-responsive">
-                            <tbody></tbody>
-                        </table>
-                    </div>
+                    <select title="xml" id="xml-select"></select>
                 </div>
             </form>
+        </div>
+        <div class="row">
+            <button type="button" class="btn btn-success" id="deploy">Deploy</button>
         </div>
     </div>
 </div>
 <script src="//code.jquery.com/jquery-1.9.1.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.js"></script>
 <!-- Metis Menu Plugin JavaScript -->
 <script src="../vendor/metisMenu/metisMenu.min.js"></script>
