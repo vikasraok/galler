@@ -39,4 +39,7 @@ $(function() {
             break;
         }
     }
+    $("#xml_editor").xmlEditor({
+        schema: '../asset/galler.json'
+    });
 });
