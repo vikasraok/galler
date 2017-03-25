@@ -46,7 +46,7 @@
                 function (event) {
                     event.preventDefault();
                     $.ajax({
-                        url: window.location.origin + '/galler/event',
+                        url: window.location.origin + '/galler/event/',
                         headers: {
                             'TOKEN': $.cookie('token')
                         },
@@ -56,7 +56,7 @@
                             file_name: $('#xml-select').val()
                         },
                         success: function (data) {
-                            alert('')
+                            alert('Xml Deployed. See logs')
                         },
                         error: function (textStatus, errorThrown) {
                             alert('couldn\'t get rtus, check logs!');

@@ -3178,7 +3178,7 @@
                                 var fileName = submitDialog.find('input[type="text"]').val();
                                 if (!fileName)
                                     fileName = "file";
-                                config.url = config.url + '/?'+ fileName;
+                                config.url = config.url + '/?s='+ fileName;
                                 self.editor.submitXML(config);
                             });
 
